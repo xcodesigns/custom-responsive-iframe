@@ -66,4 +66,10 @@ function custom_responsive_iframe_enqueue_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'custom_responsive_iframe_enqueue_scripts');
+
+// Shortcode function
+function custom_iframe_shortcode() {
+    return '<div id="custom-iframe-container"></div>';
+}
+add_shortcode('custom_iframe', 'custom_iframe_shortcode');
 ?>
